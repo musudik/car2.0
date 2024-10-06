@@ -32,7 +32,7 @@ import java.util.Set;
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "TB_AGS_CAR_SELL_MASTER_DATA")
+@Table(name = "TB_AGS_CAR_SELL_MASTER_DATA" , schema="public")
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 @JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "carSellId", scope = Integer.class)
 public class CarSellMasterData {

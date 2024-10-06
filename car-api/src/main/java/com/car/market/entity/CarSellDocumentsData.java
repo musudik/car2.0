@@ -19,7 +19,7 @@ import java.util.Date;
 @Data
 @ToString
 @Entity
-@Table(name = "TB_AGS_CAR_SELL_DOCUMENTS_DATA")
+@Table(name = "TB_AGS_CAR_SELL_DOCUMENTS_DATA" , schema="public")
 public class CarSellDocumentsData {
 
     @Id

@@ -60,4 +60,27 @@
     "mileage":"8100"
 }
 
+#POSTGRES
+-- Database: car-market
+
+-- DROP DATABASE IF EXISTS "car-market";
+
+CREATE DATABASE "car-market"
+    WITH
+    OWNER = postgres
+    ENCODING = 'UTF8'
+    LC_COLLATE = 'English_United States.1252'
+    LC_CTYPE = 'English_United States.1252'
+    LOCALE_PROVIDER = 'libc'
+    TABLESPACE = pg_default
+    CONNECTION LIMIT = -1
+    IS_TEMPLATE = False;
+
+CREATE USER market WITH PASSWORD 'market';
+commit;
+
+GRANT ALL PRIVILEGES ON DATABASE "car-market" TO market;
+commit;
+
+SELECT * FROM pg_user WHERE usename = 'postgres';
 */
